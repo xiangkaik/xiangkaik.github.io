@@ -1,0 +1,15 @@
+- title: ins
+  url: https://www.instagram.com/xian.gkai/
+  icon: fab fa-instagram
+- title: Twitter
+  url: https://twitter.com/xk_iuy
+  icon: fab fa-twitter
+- title: WeChat
+  url: /assets/images/wechat.jpg
+  icon: fab fa-weixin
+- title: Linkedin
+  url: https://www.linkedin.com/in/kaizhou0305
+  icon: fab fa-linkedin
+- title: Email
+  url: mailto:kaizhou0305@gmail.com
+  icon: fas fa-envelope

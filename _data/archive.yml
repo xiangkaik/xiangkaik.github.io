@@ -1,0 +1,6 @@
+- type: tags
+  title: 标签
+  url: /tags/
+- type: dates
+  title: 日期
+  url: /dates/
