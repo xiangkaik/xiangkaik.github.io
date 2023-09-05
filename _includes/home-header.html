@@ -4,7 +4,6 @@
     <ul class="home-header-menu pure-menu-list">
       {% for item in site.data.archive %}
         <li class="pure-menu-item">
-          <i class="fa-solid fa-bars" style="color: #00bcee;"></i>
           <a href="{{ item.url | relative_url }}" class="pure-menu-link {% if page.url == item.url %}current-item{% endif %}"">{{ item.title }}</a>
         </li>
       {% endfor %}
