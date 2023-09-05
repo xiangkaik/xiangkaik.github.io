@@ -1,3 +1,6 @@
+- type: home
+  title: 主页
+  url: /
 - type: tags
   title: 标签
   url: /tags/
