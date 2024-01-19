@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>走开</title>
+        <link>https://www.xiangkaik.top/</link>
+        <description>Recent content on 走开</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Wed, 17 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.xiangkaik.top/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>基于Hugo、Stack主题和Github Pages搭建个人博客的全流程</title>
+        <link>https://www.xiangkaik.top/post/hugo-stack/</link>
+        <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.xiangkaik.top/post/hugo-stack/</guid>
+        <description>&lt;img src="https://www.xiangkaik.top/post/hugo-stack/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post 基于Hugo、Stack主题和Github Pages搭建个人博客的全流程" /&gt;&lt;p&gt;引用别人的一句话：明明自己也是刚刚才搭建好甚至第一次搭建，或许对于博客而言，第一篇博文记录这个博客的诞生过程是相当有意义的事吧。&lt;/p&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;下载Hugo&lt;a class=&#34;link&#34; href=&#34;https://wwtl.lanzoum.com/iwFUs1lefywd&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;安装包&lt;/a&gt;，hugo安装包后缀extension代表扩展版，一般就下载这个（更全面，更兼容）&lt;/li&gt;
+&lt;li&gt;下载自己喜欢的hugo&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;主题&lt;/a&gt;，这里提供的是本站使用的主题，直接Github上clone下来或者Download ZIP即可&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这边说明一下&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GitHub Pages&lt;/strong&gt; 是一个静态站点托管服务，直接将个人、组织或项目的页面托管于 GitHub 库或仓库 (repository) 中。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hugo&lt;/strong&gt; 是一个用 Go 语言编写的静态站点生成器，它针对速度、易用性和可配置性进行了优化，快速灵活。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这也就意味着是使用Hugo在本地进行网站文件的编写，然后生成Public文件夹（静态网站文件），最后将Public文件夹部署到Github上，通过GitHub Pages生成静态网页。&lt;/p&gt;
+&lt;h2 id=&#34;安装hugo&#34;&gt;安装Hugo&lt;/h2&gt;
+&lt;p&gt;这里只说明在windows上安装的方法，即将解压后的&lt;em&gt;&lt;strong&gt;hugo.exe所在目录&lt;/strong&gt;&lt;/em&gt;加入系统环境变量中。&lt;/p&gt;
+&lt;p&gt;安装完成后，输入以下命令来确认。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安装是否成功显而易见&lt;/p&gt;
+&lt;h2 id=&#34;新建-hugo-网站&#34;&gt;新建 Hugo 网站&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;进入你想存放 Hugo 网站文件夹的目录。&lt;/li&gt;
+&lt;li&gt;打开终端（注意要在第一步的目录下）执行以下命令新建一个 Hugo 网站。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site blog   &lt;span style=&#34;color:#75715e&#34;&gt;# &amp;#34;blog&amp;#34; 是我的网站文件夹名。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;进入创建的 &lt;code&gt;blog&lt;/code&gt; 目录，可以看到生成的目录结构长这样：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── archetypes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    └── default.md
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── hugo.toml
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── content
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── data
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── layouts
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── static
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└── themes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;......
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;选择一个主题&#34;&gt;选择一个主题&lt;/h2&gt;
+&lt;p&gt;创建完网站之后，我们就可以使用一开始下载的主题了。&lt;/p&gt;
+&lt;p&gt;这里以 hugo-theme-stack 这个主题为例，进入上一步创建的个人网站文件夹，并克隆主题到 themes 文件夹（如果没有就新建一个）。&lt;/p&gt;
+&lt;h2 id=&#34;修改网站配置&#34;&gt;修改网站配置&lt;/h2&gt;
+&lt;p&gt;修改项目根目录下的hugo.toml，最后一行新增：&lt;/p&gt;
+&lt;p&gt;theme = &amp;lsquo;你使用的主题名称&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;例如：theme = &amp;lsquo;hugo-theme-stack&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;与此同时，其余行都可自定义，如博客名称等，可以自行尝试。&lt;/p&gt;
+&lt;p&gt;修改好后，在项目根目录运行以下命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果没有报错的话，就可以看到 hugo 服务器在本地运行了。&lt;/p&gt;
+&lt;h2 id=&#34;创建文章&#34;&gt;创建文章&lt;/h2&gt;
+&lt;p&gt;接下来我们可以开始写文章了，通过直接在命令行（blog目录下）输入：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new posts/helloworld.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;新建一篇文章。在生成的文件中使用 &lt;code&gt;markdown&lt;/code&gt; 格式来书写文章内容。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &amp;#34;Helloworld&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date: 2020-04-19
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;draft: true   #上传时需要改为false,因为这一行的含义是&amp;#39;是否为草稿&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## 说明
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;HelloWorld
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;这是内容
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;网站预览&#34;&gt;网站预览&lt;/h2&gt;
+&lt;p&gt;执行 &lt;code&gt;server&lt;/code&gt; 命令，对所有已发布和编辑中的文章进行预览：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用浏览器打开 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://localhost:1313&lt;/a&gt; 预览。&lt;/p&gt;
+&lt;p&gt;当然，这一步可以使用bat脚本自动化，blog文件夹下新建&lt;strong&gt;本地运行.bat&lt;/strong&gt;，右键编辑以下内容&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;@echo off 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chcp &lt;span style=&#34;color:#ae81ff&#34;&gt;65001&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 用于显示UTF-8字符&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo 【本地运行】
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;start chrome http://localhost:1313/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pause
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;发布内容&#34;&gt;发布内容&lt;/h2&gt;
+&lt;p&gt;写完文章，预览没问题后，可以更改文章的草稿状态 &lt;code&gt;draft: false&lt;/code&gt;，然后编译生成静态网站内容了：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;可以看到生成的静态内容都在 &lt;code&gt;public&lt;/code&gt; 目录下面：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;public
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── 404.html
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── categories
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── css
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── index.html
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── index.xml
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── page
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── posts
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── sitemap.xml
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└── tags
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;部署到线上&#34;&gt;部署到线上&lt;/h2&gt;
+&lt;p&gt;最简单的部署方式，只需要把 &lt;code&gt;public&lt;/code&gt; 目录下的内容上传到 &lt;code&gt;Github&lt;/code&gt;，并使用 &lt;code&gt;Github Pages&lt;/code&gt; 创建一个站点，就可以通过：&lt;code&gt;xxx.github.io&lt;/code&gt; 访问了，还可以绑定自定义域名。&lt;/p&gt;
+&lt;p&gt;域名解析设置如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.xiangkaik.top/post/hugo-stack/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png&#34;
+	width=&#34;1450&#34;
+	height=&#34;295&#34;
+	srcset=&#34;https://www.xiangkaik.top/post/hugo-stack/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_hu71751c44e7ab1bced0a588dadd06a18d_29295_480x0_resize_box_3.png 480w, https://www.xiangkaik.top/post/hugo-stack/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_hu71751c44e7ab1bced0a588dadd06a18d_29295_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;491&#34;
+		data-flex-basis=&#34;1179px&#34;
+	
+&gt;&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>About</title>
+        <link>https://www.xiangkaik.top/page/about/</link>
+        <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.xiangkaik.top/page/about/</guid>
+        <description>&lt;h2 id=&#34;关于我&#34;&gt;关于我&lt;/h2&gt;
+&lt;p&gt;一个Nobody&lt;/p&gt;
+&lt;h3 id=&#34;编程&#34;&gt;编程&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;是一名在校大学生（大数据），正在努力学习中。&lt;/li&gt;
+&lt;li&gt;已学课程有C++、Python、MySqL 。&lt;/li&gt;
+&lt;li&gt;自学了一点点HTML、Linux shell、Markdown。（还想学CSS、JavaScript，但体会到了心有余而力不足）&lt;/li&gt;
+&lt;li&gt;虽然学的是后端，但对前端也很感兴趣（主要是对网页感兴趣）。&lt;/li&gt;
+&lt;li&gt;有点对深度学习感兴趣，但是好难（头秃），也许之后会在此记录学习过程。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;acg&#34;&gt;ACG&lt;/h3&gt;
+&lt;h4 id=&#34;anime&#34;&gt;Anime&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;最喜欢的动漫是《咒术回战》&lt;/li&gt;
+&lt;li&gt;其次是《葬送的芙莉莲》、《紫罗兰永恒花园》、《冰菓》、《鬼灭之刃》、《间谍过家家》。&lt;/li&gt;
+&lt;li&gt;好吧其实没有认真看过多少动漫，真正看过且喜欢的的大概就这些了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;comic&#34;&gt;Comic&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;漫画。。。当然还是《咒术回战》啦，其次就是《Solo Leveling》。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;game&#34;&gt;Game&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;主要肯定是电脑游戏咯&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Steam：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最爱魂类（以前），虽然现在偏佛系了，但类似的游戏玩法依旧很爱。没错，说的就是黑神话悟空。&lt;/li&gt;
+&lt;li&gt;只狼、艾尔登法环、黑魂3&lt;/li&gt;
+&lt;li&gt;R星的每一款游戏都是艺术（GTA5游戏时长 500h+）&lt;/li&gt;
+&lt;li&gt;还有空洞骑士、地平线系列都是very好玩的&lt;/li&gt;
+&lt;li&gt;双人成行更是神中神！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Epic:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;纯白嫖，值得一玩的就是死亡搁浅了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ubisoft:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;荣耀战魂是个好游戏，其他的育碧游戏都是罐头哈哈哈哈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://www.xiangkaik.top/page/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.xiangkaik.top/page/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Home</title>
+        <link>https://www.xiangkaik.top/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.xiangkaik.top/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://www.xiangkaik.top/page/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.xiangkaik.top/page/links/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://www.xiangkaik.top/page/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.xiangkaik.top/page/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
