@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>数据结构 on 走开</title>
+        <link>https://www.xiangkaik.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+        <description>Recent content in 数据结构 on 走开</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 20 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.xiangkaik.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>数据结构（c&#43;&#43;）学习Tips</title>
+        <link>https://www.xiangkaik.top/post/c&#43;&#43;tips/</link>
+        <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.xiangkaik.top/post/c&#43;&#43;tips/</guid>
+        <description>&lt;p&gt;记录一下学习数据结构（c++）过程中遇到的问题、解决办法及重点。&lt;/p&gt;
+&lt;h2 id=&#34;数据结构&#34;&gt;数据结构&lt;/h2&gt;
+&lt;h3 id=&#34;q1求递归算法的空间复杂度和时间复杂度&#34;&gt;Q1:求递归算法的空间复杂度和时间复杂度&lt;/h3&gt;
+&lt;h2 id=&#34;c&#34;&gt;C++&lt;/h2&gt;
+&lt;h3 id=&#34;q1关于--和-&#34;&gt;Q1:关于 * 和 &amp;amp;&lt;/h3&gt;
+&lt;p&gt;假设有一个 int 类型的变量 a，pa 是指向它的指针，那么*&amp;amp;a和&amp;amp;*pa分别是什么意思呢？&lt;/p&gt;
+&lt;p&gt;*&amp;amp;a可以理解为*(&amp;amp;a)，&amp;amp;a表示取变量 a 的地址（等价于 pa），*(&amp;amp;a)表示取这个地址上的数据（等价于 *pa），绕来绕去，又回到了原点，*&amp;amp;a仍然等价于 a。&lt;/p&gt;
+&lt;p&gt;&amp;amp;*pa可以理解为&amp;amp;(*pa)，*pa表示取得 pa 指向的数据（等价于 a），&amp;amp;(*pa)表示数据的地址（等价于 &amp;amp;a），所以&amp;amp;*pa等价于 pa。&lt;/p&gt;
+&lt;h3 id=&#34;q2关于数组指针&#34;&gt;Q2:关于数组指针&lt;/h3&gt;
+&lt;p&gt;假设 p 是指向数组 arr 中第 n 个元素的指针，那么 *p++、*++p、(*p)++ 分别是什么意思呢？&lt;/p&gt;
+&lt;p&gt;*p++ 等价于 *(p++)，表示先取得第 n 个元素的值，再将 p 指向下一个元素，上面已经进行了详细讲解。&lt;/p&gt;
+&lt;p&gt;*++p 等价于 *(++p)，会先进行 ++p 运算，使得 p 的值增加，指向下一个元素，整体上相当于 *(p+1)，所以会获得第 n+1 个数组元素的值。&lt;/p&gt;
+&lt;p&gt;(*p)++ 就非常简单了，会先取得第 n 个元素的值，再对该元素的值加 1。假设 p 指向第 0  个元素，并且第 0 个元素的值为 99，执行完该语句后，第 0  个元素的值就会变为 100。&lt;/p&gt;
+&lt;h3 id=&#34;q3&#34;&gt;Q3:&lt;/h3&gt;
+&lt;h3 id=&#34;q4&#34;&gt;Q4:&lt;/h3&gt;
+&lt;h3 id=&#34;q5&#34;&gt;Q5:&lt;/h3&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

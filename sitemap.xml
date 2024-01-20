@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.xiangkaik.top/tags/c&#43;&#43;/</loc>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.xiangkaik.top/categories/</loc>
-    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.xiangkaik.top/post/</loc>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.xiangkaik.top/tags/</loc>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.xiangkaik.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.xiangkaik.top/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.xiangkaik.top/post/c&#43;&#43;tips/</loc>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.xiangkaik.top/</loc>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.xiangkaik.top/tags/css/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
@@ -14,12 +35,6 @@
     <loc>https://www.xiangkaik.top/tags/hugo/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.xiangkaik.top/post/</loc>
-    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.xiangkaik.top/tags/</loc>
-    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.xiangkaik.top/tags/themes/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -27,9 +42,6 @@
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.xiangkaik.top/categories/%E5%BB%BA%E7%AB%99%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.xiangkaik.top/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.xiangkaik.top/page/about/</loc>
