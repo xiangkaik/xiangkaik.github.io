@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head>
-	<meta name="generator" content="Hugo 0.121.2"><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Muss es sein ?'>
-<title>走开</title>
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='如何使用递归三步走解决leetcode算法题'>
+<title>递归算法题的解法</title>
 
-<link rel='canonical' href='https://www.xiangkaik.top/'>
+<link rel='canonical' href='https://www.xiangkaik.top/post/%E8%A7%A3%E9%A2%98%E5%8A%9E%E6%B3%95-%E9%80%92%E5%BD%92/'>
 
-<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='走开'>
-<meta property='og:description' content='Muss es sein ?'>
-<meta property='og:url' content='https://www.xiangkaik.top/'>
+<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='递归算法题的解法'>
+<meta property='og:description' content='如何使用递归三步走解决leetcode算法题'>
+<meta property='og:url' content='https://www.xiangkaik.top/post/%E8%A7%A3%E9%A2%98%E5%8A%9E%E6%B3%95-%E9%80%92%E5%BD%92/'>
 <meta property='og:site_name' content='走开'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-04-07T00:00:00&#43;00:00 '/>
-<meta name="twitter:title" content="走开">
-<meta name="twitter:description" content="Muss es sein ?"><link rel="alternate" type="application/rss&#43;xml" href="https://www.xiangkaik.top/index.xml">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='c&#43;&#43;' /><meta property='article:tag' content='递归' /><meta property='article:published_time' content='2024-04-07T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-04-07T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="递归算法题的解法">
+<meta name="twitter:description" content="如何使用递归三步走解决leetcode算法题">
     </head>
-    <body class="">
+    <body class="
+    article-page
+    ">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -254,61 +255,10 @@
     <aside class="sidebar right-sidebar sticky">
         
             
-                <form action="/page/search/" class="search-form widget" >
-        <p>
-            <label>Search</label>
-            <input name="keyword" required placeholder="Type something..." />
-        
-            <button title="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-            </button>
-        </p>
-    </form>
-            
-        
-            
-                <section class="widget archives">
+                
+    <section class="widget archives">
         <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">Archives</h2>
-
-        
-        
-        
-        
-        
-        <div class="widget-archive--list">
-            <div class="archives-year">
-                    <a href="/page/archives/#2024">
-                        
-                            <span class="year">2024</span>
-                            <span class="count">3</span>
-                        
-                    </a> 
-                </div>
-            
-        </div>
-    </section>
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <line x1="5" y1="9" x2="19" y2="9" />
   <line x1="5" y1="15" x2="19" y2="15" />
@@ -318,89 +268,29 @@
 
 
 
-    </div>
-    <h2 class="widget-title section-title">Categories</h2>
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#递归">递归</a></li>
+    <li><a href="#例1求二叉树的最大深度"><strong>例1：求二叉树的最大深度</strong></a></li>
+    <li><a href="#例2两两交换链表中的节点">例2：两两交换链表中的节点</a></li>
+    <li><a href="#例3平衡二叉树">例3：平衡二叉树</a></li>
+    <li><a href="#一些可以用这个套路解决的题">一些可以用这个套路解决的题</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
 
-    <div class="tagCloud-tags">
-        
-            <a href="/categories/%E5%BB%BA%E7%AB%99%E6%8A%80%E6%9C%AF/" class="font_size_1">
-                建站技术
-            </a>
-        
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="font_size_1">
-                数据结构
-            </a>
-        
-            <a href="/categories/%E7%AE%97%E6%B3%95/" class="font_size_1">
-                算法
-            </a>
-        
-    </div>
-</section>
-
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg>
-
-
-
-    </div>
-    <h2 class="widget-title section-title">Tags</h2>
-
-    <div class="tagCloud-tags">
-        
-            <a href="/tags/c&#43;&#43;/" class="font_size_2">
-                c&#43;&#43;
-            </a>
-        
-            <a href="/tags/css/" class="font_size_1">
-                css
-            </a>
-        
-            <a href="/tags/html/" class="font_size_1">
-                html
-            </a>
-        
-            <a href="/tags/hugo/" class="font_size_1">
-                Hugo
-            </a>
-        
-            <a href="/tags/themes/" class="font_size_1">
-                themes
-            </a>
-        
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="font_size_1">
-                数据结构
-            </a>
-        
-            <a href="/tags/%E9%80%92%E5%BD%92/" class="font_size_1">
-                递归
-            </a>
-        
-    </div>
-</section>
             
         
     </aside>
 
 
             <main class="main full-width">
-    
-    
-    
-    
-
-    <section class="article-list">
-        
-            
-<article class="">
+    <article class="main-article">
     <header class="article-header">
 
     <div class="article-details">
@@ -468,176 +358,226 @@
 </div>
 
 </header>
-</article>
-        
-            
-<article class="has-image">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/post/c&#43;&#43;tips/">
-                <img src="/post/c&#43;&#43;tips/maxresdefault_hu99fc8d0d85abc01ff309dec1a9ee9193_62823_800x0_resize_q75_box.jpg"
-                        srcset="/post/c&#43;&#43;tips/maxresdefault_hu99fc8d0d85abc01ff309dec1a9ee9193_62823_800x0_resize_q75_box.jpg 800w, /post/c&#43;&#43;tips/maxresdefault_hu99fc8d0d85abc01ff309dec1a9ee9193_62823_1600x0_resize_q75_box.jpg 1600w"
-                        width="800" 
-                        height="450" 
-                        loading="lazy"
-                        alt="Featured image of post 数据结构（c&#43;&#43;）学习Tips" />
-                
-            </a>
-        </div>
-    
 
-    <div class="article-details">
+    <section class="article-content">
     
-    <header class="article-category">
-        
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" >
-                数据结构
-            </a>
-        
-    </header>
     
+    <p>如何使用递归三步走解决leetcode算法题，附三道例题</p>
+<h2 id="递归">递归</h2>
+<p>何为递归？程序反复调用自身即是递归。</p>
+<p>我自己在刚开始解决递归问题的时候，总是会去纠结这一层函数做了什么，它调用自身后的下一层函数又做了什么…然后就会觉得实现一个递归解法十分复杂，根本就无从下手。</p>
+<p>相信很多初学者和我一样，这是一个思维误区，一定要走出来。既然递归是一个反复调用自身的过程，这就说明它每一级的功能都是一样的，<strong>因此我们只需要关注一级递归的解决过程即可。</strong></p>
+<p>我们需要关心的主要是以下三点：</p>
+<ol>
+<li>整个递归的终止条件。</li>
+<li>一级递归需要做什么？</li>
+<li>应该返回给上一级的返回值是什么？</li>
+</ol>
+<p><strong>因此，也就有了我们解递归题的三部曲：</strong></p>
+<ol>
+<li><strong>找整个递归的终止条件：递归应该在什么时候结束？</strong></li>
+<li><strong>找返回值：应该给上一级返回什么信息？</strong></li>
+<li><strong>本级递归应该做什么：在这一级递归中，应该完成什么任务？</strong></li>
+</ol>
+<p>一定要理解这3步，这就是以后递归秒杀算法题的依据和思路。</p>
+<p>但这么说好像很空，我们来以题目作为例子，看看怎么套这个模版，相信3道题下来，你就能慢慢理解这个模版。之后再解这种套路递归题都能直接秒了。</p>
+<h2 id="例1求二叉树的最大深度"><strong>例1：求二叉树的最大深度</strong></h2>
+<p>先看一道简单的Leetcode题目： <a class="link" href="https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/"  target="_blank" rel="noopener"
+    >Leetcode 104. 二叉树的最大深度</a></p>
+<p>题目很简单，求二叉树的最大深度，那么直接套递归解题三部曲模版：</p>
+<ol>
+<li><strong>找终止条件。</strong> 什么情况下递归结束？当然是树为空的时候，此时树的深度为0，递归就结束了。</li>
+<li><strong>找返回值。</strong> 应该返回什么？题目求的是树的最大深度，我们需要从每一级得到的信息自然是当前这一级对应的树的最大深度，因此我们的返回值应该是当前树的最大深度，这一步可以结合第三步来看。</li>
+<li><strong>本级递归应该做什么。</strong> 首先，还是强调要走出之前的思维误区，递归后我们眼里的树一定是这个样子的，看下图。此时就三个节点：root、root.left、root.right，其中根据第二步，root.left和root.right分别记录的是root的左右子树的最大深度。那么本级递归应该做什么就很明确了，自然就是在root的左右子树中选择较大的一个，再加上1就是以root为根的子树的最大深度了，然后再返回这个深度即可。</li>
+</ol>
+<pre tabindex="0"><code>class Solution {
+    public int maxDepth(TreeNode root) {
+        //终止条件：当树为空时结束递归，并返回当前深度0
+        if(root == null){
+            return 0;
+        }
+        //root的左、右子树的最大深度
+        int leftDepth = maxDepth(root.left);
+        int rightDepth = maxDepth(root.right);
+        //返回的是左右子树的最大深度+1
+        return Math.max(leftDepth, rightDepth) + 1;
+    }
+}
+</code></pre><p>当足够熟练后，也可以和Leetcode评论区一样，很骚的几行代码搞定问题，让之后的新手看的一脸懵逼(这道题也是我第一次一行代码搞定一道Leetcode题)：</p>
+<pre tabindex="0"><code>class Solution {
+    public int maxDepth(TreeNode root) {
+        return root == null ? 0 : Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+    }
+}
+</code></pre><h2 id="例2两两交换链表中的节点">例2：两两交换链表中的节点</h2>
+<p>看了一道递归套路解决二叉树的问题后，有点套路搞定递归的感觉了吗？我们再来看一道Leetcode中等难度的链表的问题，掌握套路后这种中等难度的问题真的就是秒：<a class="link" href="https://leetcode-cn.com/problems/swap-nodes-in-pairs/"  target="_blank" rel="noopener"
+    >Leetcode 24. 两两交换链表中的节点</a></p>
+<p>直接上三部曲模版：</p>
+<ol>
+<li><strong>找终止条件。</strong> 什么情况下递归终止？没得交换的时候，递归就终止了呗。因此当链表只剩一个节点或者没有节点的时候，自然递归就终止了。</li>
+<li><strong>找返回值。</strong> 我们希望向上一级递归返回什么信息？由于我们的目的是两两交换链表中相邻的节点，因此自然希望交换给上一级递归的是已经完成交换处理，即已经处理好的链表。</li>
+<li><strong>本级递归应该做什么。</strong> 结合第二步，看下图！由于只考虑本级递归，所以这个链表在我们眼里其实也就三个节点：head、head.next、已处理完的链表部分。而本级递归的任务也就是交换这3个节点中的前两个节点，就很easy了。</li>
+</ol>
+<pre tabindex="0"><code>class Solution {
+    public ListNode swapPairs(ListNode head) {
+      	//终止条件：链表只剩一个节点或者没节点了，没得交换了。返回的是已经处理好的链表
+        if(head == null || head.next == null){
+            return head;
+        }
+      	//一共三个节点:head, next, swapPairs(next.next)
+      	//下面的任务便是交换这3个节点中的前两个节点
+        ListNode next = head.next;
+        head.next = swapPairs(next.next);
+        next.next = head;
+      	//根据第二步：返回给上一级的是当前已经完成交换后，即处理好了的链表部分
+        return next;
+    }
+}
+</code></pre><h2 id="例3平衡二叉树">例3：平衡二叉树</h2>
+<p>相信经过以上2道题，你已经大概理解了这个模版的解题流程了。</p>
+<p>那么请你先不看以下部分，尝试解决一下这道easy难度的Leetcode题（个人觉得此题比上面的medium难度要难）：<a class="link" href="https://leetcode-cn.com/problems/balanced-binary-tree/comments/"  target="_blank" rel="noopener"
+    >Leetcode 110. 平衡二叉树</a></p>
+<p>我觉得这个题真的是集合了模版的精髓所在，下面套三部曲模版：</p>
+<ol>
+<li>
+<p><strong>找终止条件。</strong> 什么情况下递归应该终止？自然是子树为空的时候，空树自然是平衡二叉树了。</p>
+</li>
+<li>
+<p><strong>应该返回什么信息：</strong></p>
+<p>为什么我说这个题是集合了模版精髓？正是因为此题的返回值。要知道我们搞这么多花里胡哨的，都是为了能写出正确的递归函数，因此在解这个题的时候，我们就需要思考，我们到底希望返回什么值？</p>
+<p>何为平衡二叉树？平衡二叉树即左右两棵子树高度差不大于1的二叉树。而对于一颗树，它是一个平衡二叉树需要满足三个条件：<strong>它的左子树是平衡二叉树，它的右子树是平衡二叉树，它的左右子树的高度差不大于1</strong>。换句话说：如果它的左子树或右子树不是平衡二叉树，或者它的左右子树高度差大于1，那么它就不是平衡二叉树。</p>
+<p>而在我们眼里，这颗二叉树就3个节点：root、left、right。那么我们应该返回什么呢？如果返回一个当前树是否是平衡二叉树的boolean类型的值，那么我只知道left和right这两棵树是否是平衡二叉树，无法得出left和right的高度差是否不大于1，自然也就无法得出root这棵树是否是平衡二叉树了。而如果我返回的是一个平衡二叉树的高度的int类型的值，那么我就只知道两棵树的高度，但无法知道这两棵树是不是平衡二叉树，自然也就没法判断root这棵树是不是平衡二叉树了。</p>
+<p>因此，这里我们返回的信息应该是既包含子树的深度的int类型的值，又包含子树是否是平衡二叉树的boolean类型的值。可以单独定义一个ReturnNode类，如下：</p>
+<pre tabindex="0"><code>class ReturnNode{
+  boolean isB;
+  int depth;
+  //构造方法
+  public ReturnNode(boolean isB, int depth){
+    this.isB = isB;
+    this.depth = depth;
+  }
+}
+</code></pre></li>
+<li>
+<p><strong>本级递归应该做什么。</strong> 知道了第二步的返回值后，这一步就很简单了。目前树有三个节点：root，left，right。我们首先判断left子树和right子树是否是平衡二叉树，如果不是则直接返回false。再判断两树高度差是否不大于1，如果大于1也直接返回false。否则说明以root为节点的子树是平衡二叉树，那么就返回true和它的高度。</p>
+</li>
+</ol>
+<p>具体的Java代码如下：</p>
+<pre tabindex="0"><code>class Solution {
+    //这个ReturnNode是参考我描述的递归套路的第二步：思考返回值是什么
+    //一棵树是BST等价于它的左、右俩子树都是BST且俩子树高度差不超过1
+    //因此我认为返回值应该包含当前树是否是BST和当前树的高度这两个信息
+    private class ReturnNode{
+        boolean isB;
+        int depth;
+        public ReturnNode(int depth, boolean isB){
+            this.isB = isB;
+            this.depth = depth;
+        }
+    }
+    //主函数
+    public boolean isBalanced(TreeNode root) {
+        return isBST(root).isB;
+    }
+    //参考递归套路的第三部：描述单次执行过程是什么样的
+    //这里的单次执行过程具体如下：
+    //是否终止?-&gt;没终止的话，判断是否满足不平衡的三个条件-&gt;返回值
+    public ReturnNode isBST(TreeNode root){
+        if(root == null){
+            return new ReturnNode(0, true);
+        }
+        //不平衡的情况有3种：左树不平衡、右树不平衡、左树和右树差的绝对值大于1
+        ReturnNode left = isBST(root.left);
+        ReturnNode right = isBST(root.right);
+        if(left.isB == false || right.isB == false){
+            return new ReturnNode(0, false); 
+        }
+        if(Math.abs(left.depth - right.depth) &gt; 1){
+            return new ReturnNode(0, false);
+        }
+        //不满足上面3种情况，说明平衡了，树的深度为左右俩子树最大深度+1
+        return new ReturnNode(Math.max(left.depth, right.depth) + 1, true);
+    }
+}
+</code></pre><h2 id="一些可以用这个套路解决的题">一些可以用这个套路解决的题</h2>
+<p>暂时就写这么多啦，作为一个高考语文及格分，大学又学了工科的人，表述能力实在差因此啰啰嗦嗦写了一大堆，希望大家能理解这个很好用的套路。</p>
+<p>下面我再列举几道我在刷题过程中遇到的也是用这个套路秒的题，真的太多了，大部分链表和树的递归题都能这么秒，因为树和链表天生就是适合递归的结构。</p>
+<p>我会随时补充，正好大家可以看了上面三个题后可以拿这些题来练练手，看看自己是否能独立快速准确的写出递归解法了。</p>
+<p><a class="link" href="https://leetcode-cn.com/problems/symmetric-tree/comments/"  target="_blank" rel="noopener"
+    >Leetcode 101. 对称二叉树</a></p>
+<p><a class="link" href="https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/"  target="_blank" rel="noopener"
+    >Leetcode 111. 二叉树的最小深度</a></p>
+<p><a class="link" href="https://leetcode-cn.com/problems/invert-binary-tree/"  target="_blank" rel="noopener"
+    >Leetcode 226. 翻转二叉树</a>：这个题的备注是最骚的。Mac OS下载神器homebrew的大佬作者去面试谷歌，没做出来这道算法题，然后被谷歌面试官怼了：”我们90％的工程师使用您编写的软件(Homebrew)，但是您却无法在面试时在白板上写出翻转二叉树这道题，这太糟糕了。”</p>
+<p><a class="link" href="https://leetcode-cn.com/problems/merge-two-binary-trees/"  target="_blank" rel="noopener"
+    >Leetcode 617. 合并二叉树</a></p>
+<p><a class="link" href="https://leetcode-cn.com/problems/maximum-binary-tree/"  target="_blank" rel="noopener"
+    >Leetcode 654. 最大二叉树</a></p>
+<p><a class="link" href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/"  target="_blank" rel="noopener"
+    >Leetcode 83. 删除排序链表中的重复元素</a></p>
+</section>
 
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/post/c&#43;&#43;tips/">数据结构（c&#43;&#43;）学习Tips</a>
-        </h2>
+
+    <footer class="article-footer">
     
+    <section class="article-tags">
         
-        <h3 class="article-subtitle">
-            学习数据结构（c&#43;&#43;）过程中遇到的问题及重点
-        </h3>
+            <a href="/tags/c&#43;&#43;/">c&#43;&#43;</a>
         
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Jan 20, 2024</time>
-            </div>
-        
-
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-                <time class="article-time--reading">
-                    1 minute read
-                </time>
-            </div>
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-</article>
-        
-            
-<article class="has-image">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/post/hugo-stack/">
-                <img src="/post/hugo-stack/pawel-czerwinski-8uZPynIu-rQ-unsplash_hud7e36f7e20e71be184458283bdae4646_55974_800x0_resize_q75_box.jpg"
-                        srcset="/post/hugo-stack/pawel-czerwinski-8uZPynIu-rQ-unsplash_hud7e36f7e20e71be184458283bdae4646_55974_800x0_resize_q75_box.jpg 800w, /post/hugo-stack/pawel-czerwinski-8uZPynIu-rQ-unsplash_hud7e36f7e20e71be184458283bdae4646_55974_1600x0_resize_q75_box.jpg 1600w"
-                        width="800" 
-                        height="534" 
-                        loading="lazy"
-                        alt="Featured image of post 基于Hugo、Stack主题和Github Pages搭建个人博客的全流程" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/%E5%BB%BA%E7%AB%99%E6%8A%80%E6%9C%AF/" >
-                建站技术
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/post/hugo-stack/">基于Hugo、Stack主题和Github Pages搭建个人博客的全流程</a>
-        </h2>
-    
-        
-        <h3 class="article-subtitle">
-            教你用 Hugo、Stack 主题和Github的静态页面搭建一个自己的博客
-        </h3>
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Jan 17, 2024</time>
-            </div>
-        
-
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-                <time class="article-time--reading">
-                    1 minute read
-                </time>
-            </div>
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-</article>
+            <a href="/tags/%E9%80%92%E5%BD%92/">递归</a>
         
     </section>
-<footer class="site-footer">
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/post/c&#43;&#43;tips/">
+        
+        
+            <div class="article-image">
+                <img src="/post/c&#43;&#43;tips/maxresdefault.e4203a9b0c0a284a79f4cb6cc3ef941c_hu99fc8d0d85abc01ff309dec1a9ee9193_62823_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 数据结构（c&#43;&#43;）学习Tips"
+                        
+                        data-hash="md5-5CA6mwwKKEp59Mtsw&#43;&#43;UHA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">数据结构（c&#43;&#43;）学习Tips</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
     <section class="copyright">
         &copy; 
         
@@ -651,6 +591,85 @@
         Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
 
             </main>
         </div>
