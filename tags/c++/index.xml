@@ -166,6 +166,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;一些可以用这个套路解决的题&#34;&gt;一些可以用这个套路解决的题&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.cn/problems/binary-tree-inorder-traversal/description/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Leetcode 94. 二叉树的中序遍历&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode-cn.com/problems/symmetric-tree/comments/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Leetcode 101. 对称二叉树&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
