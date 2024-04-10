@@ -7,11 +7,11 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Sun, 07 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.xiangkaik.top/tags/%E9%80%92%E5%BD%92/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>递归算法题的解法</title>
-        <link>https://www.xiangkaik.top/post/%E8%A7%A3%E9%A2%98%E5%8A%9E%E6%B3%95-%E9%80%92%E5%BD%92/</link>
+        <title>Leetcode解法-递归</title>
+        <link>https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E9%80%92%E5%BD%92/</link>
         <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://www.xiangkaik.top/post/%E8%A7%A3%E9%A2%98%E5%8A%9E%E6%B3%95-%E9%80%92%E5%BD%92/</guid>
+        <guid>https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E9%80%92%E5%BD%92/</guid>
         <description>&lt;p&gt;如何使用递归三步走解决leetcode算法题，附三道例题&lt;/p&gt;
 &lt;h2 id=&#34;递归&#34;&gt;递归&lt;/h2&gt;
 &lt;p&gt;何为递归？程序反复调用自身即是递归。&lt;/p&gt;
