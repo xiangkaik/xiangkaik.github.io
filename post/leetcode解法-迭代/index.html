@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Muss es sein ?'>
-<title>Tag: 递归 - 走开</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='迭代算法的基本思想与例题'>
+<title>Leetcode解法-迭代</title>
 
-<link rel='canonical' href='https://www.xiangkaik.top/tags/%E9%80%92%E5%BD%92/'>
+<link rel='canonical' href='https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E8%BF%AD%E4%BB%A3/'>
 
-<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='Tag: 递归 - 走开'>
-<meta property='og:description' content='Muss es sein ?'>
-<meta property='og:url' content='https://www.xiangkaik.top/tags/%E9%80%92%E5%BD%92/'>
+<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='Leetcode解法-迭代'>
+<meta property='og:description' content='迭代算法的基本思想与例题'>
+<meta property='og:url' content='https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E8%BF%AD%E4%BB%A3/'>
 <meta property='og:site_name' content='走开'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-04-11T00:00:00&#43;00:00 '/>
-<meta name="twitter:title" content="Tag: 递归 - 走开">
-<meta name="twitter:description" content="Muss es sein ?"><link rel="alternate" type="application/rss&#43;xml" href="https://www.xiangkaik.top/tags/%E9%80%92%E5%BD%92/index.xml">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='迭代' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:published_time' content='2024-04-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-04-11T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Leetcode解法-迭代">
+<meta name="twitter:description" content="迭代算法的基本思想与例题">
     </head>
-    <body class="">
+    <body class="
+    article-page
+    ">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -253,61 +255,10 @@
     <aside class="sidebar right-sidebar sticky">
         
             
-                <form action="/page/search/" class="search-form widget" >
-        <p>
-            <label>Search</label>
-            <input name="keyword" required placeholder="Type something..." />
-        
-            <button title="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-            </button>
-        </p>
-    </form>
-            
-        
-            
-                <section class="widget archives">
+                
+    <section class="widget archives">
         <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">Archives</h2>
-
-        
-        
-        
-        
-        
-        <div class="widget-archive--list">
-            <div class="archives-year">
-                    <a href="/page/archives/#2024">
-                        
-                            <span class="year">2024</span>
-                            <span class="count">6</span>
-                        
-                    </a> 
-                </div>
-            
-        </div>
-    </section>
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <line x1="5" y1="9" x2="19" y2="9" />
   <line x1="5" y1="15" x2="19" y2="15" />
@@ -317,111 +268,273 @@
 
 
 
-    </div>
-    <h2 class="widget-title section-title">Categories</h2>
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#迭代">迭代</a>
+      <ul>
+        <li><a href="#例题1">例题1：</a></li>
+        <li><a href="#例题2">例题2：</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </section>
 
-    <div class="tagCloud-tags">
-        
-            <a href="/categories/leetcode%E7%AE%97%E6%B3%95/" class="font_size_4">
-                Leetcode算法
-            </a>
-        
-            <a href="/categories/%E5%BB%BA%E7%AB%99%E6%8A%80%E6%9C%AF/" class="font_size_1">
-                建站技术
-            </a>
-        
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="font_size_1">
-                数据结构
-            </a>
-        
-    </div>
-</section>
-
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg>
-
-
-
-    </div>
-    <h2 class="widget-title section-title">Tags</h2>
-
-    <div class="tagCloud-tags">
-        
-            <a href="/tags/c&#43;&#43;/" class="font_size_5">
-                C&#43;&#43;
-            </a>
-        
-            <a href="/tags/hugo/" class="font_size_1">
-                Hugo
-            </a>
-        
-            <a href="/tags/%E6%8E%92%E5%BA%8F/" class="font_size_1">
-                排序
-            </a>
-        
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="font_size_1">
-                数据结构
-            </a>
-        
-            <a href="/tags/%E6%A0%91/" class="font_size_1">
-                树
-            </a>
-        
-            <a href="/tags/%E8%BF%AD%E4%BB%A3/" class="font_size_1">
-                迭代
-            </a>
-        
-            <a href="/tags/%E9%80%92%E5%BD%92/" class="font_size_1">
-                递归
-            </a>
-        
-    </div>
-</section>
             
         
     </aside>
 
 
             <main class="main full-width">
-    <header>
-        <h3 class="section-title">
-            
-                Tags
-            
-        </h3>
+    <article class="main-article">
+    <header class="article-header">
 
-        <div class="section-card">
-            <div class="section-details">
-                <h3 class="section-count">1 page</h3>
-                <h1 class="section-term">递归</h1>
-                
-            </div>
-        </div>
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/leetcode%E7%AE%97%E6%B3%95/" >
+                Leetcode算法
+            </a>
+        
     </header>
     
-    <section class="article-list--compact">
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/leetcode%E8%A7%A3%E6%B3%95-%E8%BF%AD%E4%BB%A3/">Leetcode解法-迭代</a>
+        </h2>
+    
         
-            <article>
+        <h3 class="article-subtitle">
+            迭代算法的基本思想与例题
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 11, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>迭代算法的基本思想与例题</p>
+<h2 id="迭代">迭代</h2>
+<p>迭代法也称辗转法，是一种不断用变量的旧值推出新值的过程。</p>
+<p>它是解决问题的一种基本方法，通过让计算机对一组指令（或一定步骤）进行重复执行，在每次执行这组指令（或这些步骤）时，都从变量的原值推出它的一个新值。</p>
+<p>迭代算法的基本思想是：为求一个问题的解x，可由给定的一个初值x0，根据某一迭代公式得到一个新的值x1，这个新值x1比初值x0更接近要求的值x；再以新值作为初值，即：x1→x0，重新按原来的方法求x1，重复这一过程直到|x1-x0|&lt;ε(某一给定的精度)。此时可将x1作为问题的解x。</p>
+<p><strong>迭代算法解决问题，需要做好以下三个方面的工作</strong>：</p>
+<ol>
+<li>
+<p>确定迭代变量。在可以用迭代算法解决的问题中，至少存在一个直接或间接地不断由旧值推出新值的变量，这个变量就是迭代变量。</p>
+</li>
+<li>
+<p>建立迭代关系式。所谓迭代关系式，指如何从变量的前一个值推出其下一个值的公式（或关系）。迭代关系式的建立是解决迭代问题的关键。</p>
+</li>
+<li>
+<p>对迭代过程进行控制。在<strong>什么时候结束迭代过程</strong>？这是编写迭代程序必须考虑的问题。不能让迭代过程无休止地重复执行下去。迭代过程的控制通常可分为两种情况：一种是所需的迭代次数是个确定的值，可以计算出来；另一种是所需的迭代次数无法确定。对于前一种情况，可以构建一个固定次数的循环来实现对迭代过程的控制；对于后一种情况，需要进一步分析出用来结束迭代过程的条件。</p>
+</li>
+</ol>
+<p>迭代也是用循环结构实现，只不过要重复的操作是不断从一个变量的旧值出发计算它的新值。其<strong>基本格式</strong>描述如下：</p>
+<pre tabindex="0"><code>迭代变量赋初值
+while (迭代终止条件){
+  根据迭代表达式，由旧值计算出新值;
+  新值取代旧值，为下一次迭代做准备;
+}
+</code></pre><h3 id="例题1">例题1：</h3>
+<p>用迭代法求某个数的平方根。已知求平方根的迭代公式为：
+$$
+x_{1}= \frac{1}{2} \big(x_{0}+\frac{a}{x_{0}}\big)
+$$
+C++实现：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cmath&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">double</span> x0,x1,a;
+</span></span><span style="display:flex;"><span>    cin<span style="color:#f92672">&gt;&gt;</span>a;
+</span></span><span style="display:flex;"><span>    x0 <span style="color:#f92672">=</span>a<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;          <span style="color:#75715e">// 迭代初值
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    x1 <span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span><span style="color:#f92672">*</span>(x0 <span style="color:#f92672">+</span> a<span style="color:#f92672">/</span>x0);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">do</span>{
+</span></span><span style="display:flex;"><span>       x0 <span style="color:#f92672">=</span> x1;  <span style="color:#75715e">// 为下一次迭代作准备
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>       x1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span><span style="color:#f92672">*</span>(x0 <span style="color:#f92672">+</span> a<span style="color:#f92672">/</span>x0);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">while</span> (fabs(x1<span style="color:#f92672">-</span>x0)<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">0.000001</span>);
+</span></span><span style="display:flex;"><span>    cout<span style="color:#f92672">&lt;&lt;</span>x1<span style="color:#f92672">&lt;&lt;</span>endl;       <span style="color:#75715e">// 输出结果
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span> ;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="例题2">例题2：</h3>
+<p>二叉树的中序遍历：给定一个二叉树的根节点 <code>root</code> ，返回 <em>它的 <strong>中序</strong> 遍历</em> 。</p>
+<pre tabindex="0"><code>输入：root = [1,null,2,3] //以前序给出
+输出：[1,3,2]
+</code></pre><p>C++实现：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> inorderTraversal(TreeNode<span style="color:#f92672">*</span> root) {
+</span></span><span style="display:flex;"><span>        vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> res;
+</span></span><span style="display:flex;"><span>        stack<span style="color:#f92672">&lt;</span>TreeNode<span style="color:#f92672">*&gt;</span> stk;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> (root <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nullptr</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>stk.empty()) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">while</span> (root <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nullptr</span>) {
+</span></span><span style="display:flex;"><span>                stk.push(root);
+</span></span><span style="display:flex;"><span>                root <span style="color:#f92672">=</span> root<span style="color:#f92672">-&gt;</span>left;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            root <span style="color:#f92672">=</span> stk.top();
+</span></span><span style="display:flex;"><span>            stk.pop();
+</span></span><span style="display:flex;"><span>            res.push_back(root<span style="color:#f92672">-&gt;</span>val);
+</span></span><span style="display:flex;"><span>            root <span style="color:#f92672">=</span> root<span style="color:#f92672">-&gt;</span>right;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> res;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E8%BF%AD%E4%BB%A3/">迭代</a>
+        
+            <a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
     <a href="/post/leetcode%E8%A7%A3%E6%B3%95-%E9%80%92%E5%BD%92/">
+        
+        
+
         <div class="article-details">
             <h2 class="article-title">Leetcode解法-递归</h2>
-            <footer class="article-time">
-                <time datetime='2024-04-07T00:00:00Z'>Apr 07, 2024</time>
-            </footer>
         </div>
     </a>
 </article>
+
+            
+                
+<article class="">
+    <a href="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/">
         
-    </section>
-<footer class="site-footer">
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Leetcode解法-排序</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%A0%91/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Leetcode解法-树</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/post/c&#43;&#43;tips/">
+        
+        
+            <div class="article-image">
+                <img src="/post/c&#43;&#43;tips/maxresdefault.e4203a9b0c0a284a79f4cb6cc3ef941c_hu99fc8d0d85abc01ff309dec1a9ee9193_62823_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 数据结构（c&#43;&#43;）学习Tips"
+                        
+                        data-hash="md5-5CA6mwwKKEp59Mtsw&#43;&#43;UHA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">数据结构（c&#43;&#43;）学习Tips</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
     <section class="copyright">
         &copy; 
         
@@ -436,6 +549,84 @@
     </section>
 </footer>
 
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
 
             </main>
         </div>
