@@ -283,9 +283,7 @@
     <li><a href="#快速排序">快速排序</a></li>
     <li><a href="#归并排序">归并排序</a></li>
     <li><a href="#堆排序">堆排序</a></li>
-    <li><a href="#计数排序">计数排序</a></li>
     <li><a href="#基数排序">基数排序</a></li>
-    <li><a href="#桶排序">桶排序</a></li>
   </ul>
 </nav>
         </div>
@@ -369,98 +367,53 @@
     <section class="article-content">
     
     
-    <p>冒泡，选择，插入，归并，堆排，快排，计数，基数，桶排</p>
+    <p>冒泡，选择，插入，归并，堆排，快排，基数</p>
 <h1 id="排序算法">排序算法</h1>
+<p><img src="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.png"
+	width="2100"
+	height="585"
+	srcset="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5_hu86554dcf38136cbc0a1629be1da7bb31_359418_480x0_resize_box_3.png 480w, /post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5_hu86554dcf38136cbc0a1629be1da7bb31_359418_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="358"
+		data-flex-basis="861px"
+	
+></p>
 <ul>
 <li>比较排序算法: 冒泡, 选择, 插入, 归并, 堆排, 快排</li>
 <li>非比较排序算法: 计数, 基数, 桶排</li>
 <li>稳定性: 7 个常用算法, 3 稳(冒泡, 插入, 归并) 4 不稳 (选择, 希尔, 快排, 堆排)</li>
 </ul>
-<div class="table-wrapper"><table>
-<thead>
-<tr>
-<th style="text-align:center">排序算法</th>
-<th style="text-align:center">平均时间复杂度</th>
-<th style="text-align:center">最坏/最好时间复杂度</th>
-<th style="text-align:center">空间复杂度</th>
-<th style="text-align:center">是否稳定</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">冒泡排序</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">稳定</td>
-</tr>
-<tr>
-<td style="text-align:center">选择排序</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">不稳定</td>
-</tr>
-<tr>
-<td style="text-align:center">插入排序</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">稳定</td>
-</tr>
-<tr>
-<td style="text-align:center">希尔排序</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">不稳定</td>
-</tr>
-<tr>
-<td style="text-align:center">快速排序</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">不稳定</td>
-</tr>
-<tr>
-<td style="text-align:center">归并排序</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">稳定</td>
-</tr>
-<tr>
-<td style="text-align:center">堆排序</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">不稳定</td>
-</tr>
-<tr>
-<td style="text-align:center">计数排序</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">稳定</td>
-</tr>
-<tr>
-<td style="text-align:center">基数排序</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">稳定</td>
-</tr>
-<tr>
-<td style="text-align:center">桶排序</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">稳定</td>
-</tr>
-</tbody>
-</table></div>
+<p><img src="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90.png"
+	width="1372"
+	height="826"
+	srcset="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90_hua4ce9430d7221f9bd7399cdbbd214ac5_141872_480x0_resize_box_3.png 480w, /post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90_hua4ce9430d7221f9bd7399cdbbd214ac5_141872_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="排序算法复杂度分析"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="166"
+		data-flex-basis="398px"
+	
+></p>
 <h2 id="冒泡排序">冒泡排序</h2>
 <p>从后往前, 相邻的数据两两比较, 一趟完成后, 第一个元素为最大/小值</p>
+<p><img src="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.png"
+	width="2239"
+	height="1025"
+	srcset="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F_hu6818b3c2d1ee453acc5bc2a7c9efb276_636494_480x0_resize_box_3.png 480w, /post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F_hu6818b3c2d1ee453acc5bc2a7c9efb276_636494_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="218"
+		data-flex-basis="524px"
+	
+></p>
 <p><strong>C++实现：</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">bubble_sort</span>(vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span>input){
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>input.size(); i<span style="color:#f92672">++</span>){
@@ -477,7 +430,31 @@
 <p>冒泡排序是只在一个方向上进行排序, 鸡尾酒排序是从前往后和从后往前交替排序(即先找最大, 再找最小). <strong>在面对大部分元素已经有序的数组时, 鸡尾酒排序的时间复杂度接近于 O(n).</strong></p>
 <h2 id="选择交换排序">选择(交换)排序</h2>
 <p>在未排序序列中找到最小(大)元素, 存放到起始位置；然后再从剩余的序列中继续寻找最小(大)元素, 并将其放到起始位置的下一个位置；以此类推, 直到所有元素排序完毕.</p>
+<p><img src="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E7%AE%80%E5%8D%95%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.png"
+	width="2195"
+	height="671"
+	srcset="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E7%AE%80%E5%8D%95%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F_huf220891cf0b64944a0158581cf3f64b9_366195_480x0_resize_box_3.png 480w, /post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E7%AE%80%E5%8D%95%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F_huf220891cf0b64944a0158581cf3f64b9_366195_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="327"
+		data-flex-basis="785px"
+	
+></p>
 <h2 id="插入排序">插入排序</h2>
+<p><img src="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.png"
+	width="2384"
+	height="859"
+	srcset="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F_hu2e6f3bc8005630834b00b22f64345536_652981_480x0_resize_box_3.png 480w, /post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F_hu2e6f3bc8005630834b00b22f64345536_652981_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="277"
+		data-flex-basis="666px"
+	
+></p>
 <ol>
 <li>
 <p>从第一个元素开始，该元素可以认为已经被排序</p>
@@ -515,6 +492,18 @@
 <h2 id="改进插入排序二分插入排序">（改进）插入排序：<strong>二分插入排序:</strong></h2>
 <p>直接插入在查找插入位置时, 可以采用二分查找的方式(因为已经有序), 这样可以减少查找插入位置时花费的时间.</p>
 <h2 id="希尔排序">希尔排序</h2>
+<p><img src="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F.png"
+	width="2257"
+	height="770"
+	srcset="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F_hu8883de99025b5790d1195e05c208b13e_570919_480x0_resize_box_3.png 480w, /post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F_hu8883de99025b5790d1195e05c208b13e_570919_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="293"
+		data-flex-basis="703px"
+	
+></p>
 <p>希尔排序(Shell Sort), 也叫<strong>递减增量排序</strong>, 其实质是分组插入排序, 是插入排序中一种更高效的改进版本. 插入排序具有以下两点性质:</p>
 <ul>
 <li>
@@ -535,6 +524,18 @@
 </li>
 </ul>
 <h2 id="快速排序">快速排序</h2>
+<p><img src="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.png"
+	width="1895"
+	height="678"
+	srcset="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F_hu0819d4f65462f6a0705d31584a1f6d49_368622_480x0_resize_box_3.png 480w, /post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F_hu0819d4f65462f6a0705d31584a1f6d49_368622_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="279"
+		data-flex-basis="670px"
+	
+></p>
 <p><strong>C++递归实现：</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">quickSort</span>(vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;&amp;</span> input, <span style="color:#66d9ef">int</span> low, <span style="color:#66d9ef">int</span> high){
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(input.size()<span style="color:#f92672">==</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> low<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> low<span style="color:#f92672">&gt;=</span>input.size() <span style="color:#f92672">||</span> high<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> high<span style="color:#f92672">&gt;=</span>input.size()){
@@ -549,7 +550,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">Partition</span>(vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;&amp;</span> input, <span style="color:#66d9ef">int</span> low, <span style="color:#66d9ef">int</span> high){
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> p <span style="color:#f92672">=</span> input[low];
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span>(low<span style="color:#f92672">&lt;</span>high){
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// 一定要high在前, 否则会造成数组元素覆盖, 回忆头条面试惨痛经历!
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// 一定要high在前, 否则会造成数组元素覆盖
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">while</span>(low<span style="color:#f92672">&lt;</span>high <span style="color:#f92672">&amp;&amp;</span> p<span style="color:#f92672">&lt;=</span>input[high]) high<span style="color:#f92672">--</span>; <span style="color:#75715e">//这里注意, 如果忘了写=号, 就会陷入死循环
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        input[low] <span style="color:#f92672">=</span> input[high];
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span>(low<span style="color:#f92672">&lt;</span>high <span style="color:#f92672">&amp;&amp;</span> p<span style="color:#f92672">&gt;=</span>input[low]) low<span style="color:#f92672">++</span>;
@@ -558,7 +559,33 @@
 </span></span><span style="display:flex;"><span>    input[low] <span style="color:#f92672">=</span> p;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> low;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="归并排序">归并排序</h2>
+</span></span></code></pre></div><p><img src="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.gif"
+	width="1517"
+	height="480"
+	srcset="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F_hu359d9718d55341056412f5d65dcefc09_615835_480x0_resize_box_1.gif 480w, /post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F_hu359d9718d55341056412f5d65dcefc09_615835_1024x0_resize_box_1.gif 1024w"
+	loading="lazy"
+	
+		alt="快速排序示意图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="316"
+		data-flex-basis="758px"
+	
+></p>
+<h2 id="归并排序">归并排序</h2>
+<p><img src="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F.png"
+	width="2090"
+	height="1022"
+	srcset="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F_huae57361c53a98c414f19b1e266977fca_503104_480x0_resize_box_3.png 480w, /post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F_huae57361c53a98c414f19b1e266977fca_503104_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="204"
+		data-flex-basis="490px"
+	
+></p>
 <p><strong>C++递归实现：</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">mergesort</span>(vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;&amp;</span> a,<span style="color:#66d9ef">int</span> first, <span style="color:#66d9ef">int</span> last){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(first<span style="color:#f92672">&lt;</span>last){
@@ -595,9 +622,31 @@
 </span></span><span style="display:flex;"><span>    a.at(first1<span style="color:#f92672">+</span>i) <span style="color:#f92672">=</span> temp.at(i);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="堆排序">堆排序</h2>
-<h2 id="计数排序">计数排序</h2>
+<p><img src="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%A0%86%E6%8E%92%E5%BA%8F.png"
+	width="2198"
+	height="1066"
+	srcset="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%A0%86%E6%8E%92%E5%BA%8F_hu23be3537193c3d371e2b37ecce735f47_726641_480x0_resize_box_3.png 480w, /post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%A0%86%E6%8E%92%E5%BA%8F_hu23be3537193c3d371e2b37ecce735f47_726641_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="206"
+		data-flex-basis="494px"
+	
+></p>
 <h2 id="基数排序">基数排序</h2>
-<h2 id="桶排序">桶排序</h2>
+<p><img src="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F.png"
+	width="2422"
+	height="1006"
+	srcset="/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F_hue0e6d0e247ba1d7d0cefaaa78a3d9ce3_720408_480x0_resize_box_3.png 480w, /post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F_hue0e6d0e247ba1d7d0cefaaa78a3d9ce3_720408_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="240"
+		data-flex-basis="577px"
+	
+></p>
 </section>
 
 

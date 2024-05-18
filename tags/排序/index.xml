@@ -12,98 +12,53 @@
         <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
         
         <guid>https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/</guid>
-        <description>&lt;p&gt;冒泡，选择，插入，归并，堆排，快排，计数，基数，桶排&lt;/p&gt;
+        <description>&lt;p&gt;冒泡，选择，插入，归并，堆排，快排，基数&lt;/p&gt;
 &lt;h1 id=&#34;排序算法&#34;&gt;排序算法&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.png&#34;
+	width=&#34;2100&#34;
+	height=&#34;585&#34;
+	srcset=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5_hu86554dcf38136cbc0a1629be1da7bb31_359418_480x0_resize_box_3.png 480w, https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5_hu86554dcf38136cbc0a1629be1da7bb31_359418_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;358&#34;
+		data-flex-basis=&#34;861px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;比较排序算法: 冒泡, 选择, 插入, 归并, 堆排, 快排&lt;/li&gt;
 &lt;li&gt;非比较排序算法: 计数, 基数, 桶排&lt;/li&gt;
 &lt;li&gt;稳定性: 7 个常用算法, 3 稳(冒泡, 插入, 归并) 4 不稳 (选择, 希尔, 快排, 堆排)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;排序算法&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;平均时间复杂度&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;最坏/最好时间复杂度&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;空间复杂度&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;是否稳定&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;冒泡排序&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;稳定&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;选择排序&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;不稳定&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;插入排序&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;稳定&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;希尔排序&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;不稳定&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;快速排序&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;不稳定&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;归并排序&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;稳定&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;堆排序&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;不稳定&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;计数排序&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;稳定&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;基数排序&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;稳定&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;桶排序&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;稳定&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90.png&#34;
+	width=&#34;1372&#34;
+	height=&#34;826&#34;
+	srcset=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90_hua4ce9430d7221f9bd7399cdbbd214ac5_141872_480x0_resize_box_3.png 480w, https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90_hua4ce9430d7221f9bd7399cdbbd214ac5_141872_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;排序算法复杂度分析&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;398px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;h2 id=&#34;冒泡排序&#34;&gt;冒泡排序&lt;/h2&gt;
 &lt;p&gt;从后往前, 相邻的数据两两比较, 一趟完成后, 第一个元素为最大/小值&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.png&#34;
+	width=&#34;2239&#34;
+	height=&#34;1025&#34;
+	srcset=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F_hu6818b3c2d1ee453acc5bc2a7c9efb276_636494_480x0_resize_box_3.png 480w, https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F_hu6818b3c2d1ee453acc5bc2a7c9efb276_636494_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;218&#34;
+		data-flex-basis=&#34;524px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;C++实现：&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;bubble_sort&lt;/span&gt;(vector&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;input){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; i&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;input.size(); i&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;){
@@ -120,7 +75,31 @@
 &lt;p&gt;冒泡排序是只在一个方向上进行排序, 鸡尾酒排序是从前往后和从后往前交替排序(即先找最大, 再找最小). &lt;strong&gt;在面对大部分元素已经有序的数组时, 鸡尾酒排序的时间复杂度接近于 O(n).&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;选择交换排序&#34;&gt;选择(交换)排序&lt;/h2&gt;
 &lt;p&gt;在未排序序列中找到最小(大)元素, 存放到起始位置；然后再从剩余的序列中继续寻找最小(大)元素, 并将其放到起始位置的下一个位置；以此类推, 直到所有元素排序完毕.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E7%AE%80%E5%8D%95%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.png&#34;
+	width=&#34;2195&#34;
+	height=&#34;671&#34;
+	srcset=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E7%AE%80%E5%8D%95%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F_huf220891cf0b64944a0158581cf3f64b9_366195_480x0_resize_box_3.png 480w, https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E7%AE%80%E5%8D%95%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F_huf220891cf0b64944a0158581cf3f64b9_366195_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;327&#34;
+		data-flex-basis=&#34;785px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;h2 id=&#34;插入排序&#34;&gt;插入排序&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.png&#34;
+	width=&#34;2384&#34;
+	height=&#34;859&#34;
+	srcset=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F_hu2e6f3bc8005630834b00b22f64345536_652981_480x0_resize_box_3.png 480w, https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F_hu2e6f3bc8005630834b00b22f64345536_652981_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;277&#34;
+		data-flex-basis=&#34;666px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;从第一个元素开始，该元素可以认为已经被排序&lt;/p&gt;
@@ -158,6 +137,18 @@
 &lt;h2 id=&#34;改进插入排序二分插入排序&#34;&gt;（改进）插入排序：&lt;strong&gt;二分插入排序:&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;直接插入在查找插入位置时, 可以采用二分查找的方式(因为已经有序), 这样可以减少查找插入位置时花费的时间.&lt;/p&gt;
 &lt;h2 id=&#34;希尔排序&#34;&gt;希尔排序&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F.png&#34;
+	width=&#34;2257&#34;
+	height=&#34;770&#34;
+	srcset=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F_hu8883de99025b5790d1195e05c208b13e_570919_480x0_resize_box_3.png 480w, https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F_hu8883de99025b5790d1195e05c208b13e_570919_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;293&#34;
+		data-flex-basis=&#34;703px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;p&gt;希尔排序(Shell Sort), 也叫&lt;strong&gt;递减增量排序&lt;/strong&gt;, 其实质是分组插入排序, 是插入排序中一种更高效的改进版本. 插入排序具有以下两点性质:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -178,6 +169,18 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;快速排序&#34;&gt;快速排序&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.png&#34;
+	width=&#34;1895&#34;
+	height=&#34;678&#34;
+	srcset=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F_hu0819d4f65462f6a0705d31584a1f6d49_368622_480x0_resize_box_3.png 480w, https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F_hu0819d4f65462f6a0705d31584a1f6d49_368622_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;279&#34;
+		data-flex-basis=&#34;670px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;C++递归实现：&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;quickSort&lt;/span&gt;(vector&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;amp;&lt;/span&gt; input, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; low, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; high){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(input.size()&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; low&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; low&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt;input.size() &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; high&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; high&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt;input.size()){
@@ -192,7 +195,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Partition&lt;/span&gt;(vector&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;amp;&lt;/span&gt; input, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; low, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; high){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; p &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; input[low];
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;(low&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;high){
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// 一定要high在前, 否则会造成数组元素覆盖, 回忆头条面试惨痛经历!
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// 一定要high在前, 否则会造成数组元素覆盖
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;(low&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;high &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; p&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;input[high]) high&lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;//这里注意, 如果忘了写=号, 就会陷入死循环
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        input[low] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; input[high];
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;(low&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;high &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; p&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt;input[low]) low&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;;
@@ -201,7 +204,33 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    input[low] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; p;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; low;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;归并排序&#34;&gt;归并排序&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.gif&#34;
+	width=&#34;1517&#34;
+	height=&#34;480&#34;
+	srcset=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F_hu359d9718d55341056412f5d65dcefc09_615835_480x0_resize_box_1.gif 480w, https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F_hu359d9718d55341056412f5d65dcefc09_615835_1024x0_resize_box_1.gif 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;快速排序示意图&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;316&#34;
+		data-flex-basis=&#34;758px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;归并排序&#34;&gt;归并排序&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F.png&#34;
+	width=&#34;2090&#34;
+	height=&#34;1022&#34;
+	srcset=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F_huae57361c53a98c414f19b1e266977fca_503104_480x0_resize_box_3.png 480w, https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F_huae57361c53a98c414f19b1e266977fca_503104_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;490px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;C++递归实现：&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mergesort&lt;/span&gt;(vector&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;amp;&lt;/span&gt; a,&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; first, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; last){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(first&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;last){
@@ -238,9 +267,31 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    a.at(first1&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;i) &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; temp.at(i);
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;堆排序&#34;&gt;堆排序&lt;/h2&gt;
-&lt;h2 id=&#34;计数排序&#34;&gt;计数排序&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%A0%86%E6%8E%92%E5%BA%8F.png&#34;
+	width=&#34;2198&#34;
+	height=&#34;1066&#34;
+	srcset=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%A0%86%E6%8E%92%E5%BA%8F_hu23be3537193c3d371e2b37ecce735f47_726641_480x0_resize_box_3.png 480w, https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%A0%86%E6%8E%92%E5%BA%8F_hu23be3537193c3d371e2b37ecce735f47_726641_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;206&#34;
+		data-flex-basis=&#34;494px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;h2 id=&#34;基数排序&#34;&gt;基数排序&lt;/h2&gt;
-&lt;h2 id=&#34;桶排序&#34;&gt;桶排序&lt;/h2&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F.png&#34;
+	width=&#34;2422&#34;
+	height=&#34;1006&#34;
+	srcset=&#34;https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F_hue0e6d0e247ba1d7d0cefaaa78a3d9ce3_720408_480x0_resize_box_3.png 480w, https://www.xiangkaik.top/post/leetcode%E8%A7%A3%E6%B3%95-%E6%8E%92%E5%BA%8F/%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F_hue0e6d0e247ba1d7d0cefaaa78a3d9ce3_720408_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;240&#34;
+		data-flex-basis=&#34;577px&#34;
+	
+&gt;&lt;/p&gt;</description>
         </item>
         
     </channel>
