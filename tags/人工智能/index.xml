@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>人工智能 on 走开</title>
+        <link>https://www.xiangkaik.top/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link>
+        <description>Recent content in 人工智能 on 走开</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 20 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.xiangkaik.top/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>LLM本地微调、部署、应用</title>
+        <link>https://www.xiangkaik.top/post/llm%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/</link>
+        <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.xiangkaik.top/post/llm%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/</guid>
+        <description>&lt;img src="https://www.xiangkaik.top/post/llm%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/index.jpg" alt="Featured image of post LLM本地微调、部署、应用" /&gt;&lt;p&gt;从零开始LLM本地微调、部署、应用，包括Linux安装使用&lt;/p&gt;
+&lt;h2 id=&#34;llm本地微调部署应用&#34;&gt;LLM本地微调、部署、应用&lt;/h2&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
